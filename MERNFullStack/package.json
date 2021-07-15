@@ -1,0 +1,18 @@
+{
+  "name": "freelance_force",
+  "version": "1.0.0",
+  "description": "Then Is MERN Based webpage part of a To Create a fully functional cross-platform application to connect developers in order to convert ideas into new and exciting projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kartik Agarwal, Eshaan Anand, Soham Dutta",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^5.13.2"
+  }
+}
