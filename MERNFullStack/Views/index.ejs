@@ -9,6 +9,9 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+        body{
+            background: linear-gradient(45deg, #F96CB1, #F46479, #EE7435);
+        }
         .nav{
             display: flex;
             position: absolute;
@@ -16,52 +19,74 @@
             left: 0;
         }
         .nav-left-grp{
-            background-color: rgba(255,255,255,1);
+            background-color: rgba(255,255,255,0.9);
             border: none;
-            display: flex;
-            margin-top: 35px;
-            margin-left: 30px;
-            margin-right: 20px;
-            width: 200px;
-            height: 40px;
-            padding-bottom: 3px;
-            padding-left: 10px;
-            padding-right: 10px;
-            border-radius: 16px;
-            box-shadow:0 1px 2px #5e5d5b;
+            margin-top: 95%;
+            margin-left: 40%;
+            margin-right: 10%;
+            width: 100%;
+            height: auto;
+            padding-left: 10%;
+            padding-right: 10%;
+            text-align: center;
+            transition: 0.6s;
+            mix-blend-mode: screen;
+            font-family: 'Otomanopee One' ;
+            font-size: 40px;
+            /*font-weight: bolder;*/
+        }
+        .nav-head{
+            border: none;
+            margin-top: 15%;
+            margin-left: 10%;
+            margin-right: 10%;
+            width: auto;
+            height: auto;
+            padding-left: 10%;
+            padding-right: 10%;
             text-align: center;
             transition: 0.6s;
             font-family: 'Otomanopee One' ;
-            font-size: 20px;
-            /*font-weight: bolder;*/
+            font-size: 700%;
+        }
+        .nav-subhead{
+            border: none;
+            margin-top: 22%;
+            margin-left: 5%;
+            margin-right: 10%;
+            width: auto;
+            height: auto;
+            padding-left: 10%;
+            padding-right: 10%;
+            text-align: center;
+            transition: 0.6s;
+            font-family: 'Otomanopee One' ;
+            font-size: 100%;
         }
         .nav-left-grp:hover {
             animation-name: background-color;
+            mix-blend-mode: screen;
             animation-duration: 1000ms;
         }
         .nav-left-grp:active{
             animation-name: background-color1;
+            mix-blend-mode: screen;
             animation-duration: 1000ms;
         }
 
         @keyframes background-color1 {
             100% {
-                background: linear-gradient(90deg, lightskyblue, white);
+                background: rgba(255, 255, 255, 0.3);
                 box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
                 transform: translateY(4px);
             }
         }
         @keyframes background-color {
             100% {
-                background: linear-gradient(90deg, lightskyblue, white);
+                background: rgba(255, 255, 255, 0.3);
                 /*box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);*/
                 transform: translateY(-1px);
             }
-        }
-        svg{
-            position: absolute;
-            top: 0;
-            left: 0;
         }
 
     </style>
@@ -69,14 +94,24 @@
     <title>EKaSo</title>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L60,197.3C120,203,240,213,360,208C480,203,600,181,720,149.3C840,117,960,75,1080,69.3C1200,64,1320,96,1380,112L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" style="--darkreader-inline-fill:#007acc;" data-darkreader-inline-fill=""></path></svg>
-<div class="nav">
-    <button class="nav-left-grp">About Us</button>
-    <button class="nav-left-grp">Buy/Purchase</button>
-    <button class="nav-left-grp">Contact Us</button>
-</div>
-<!--<div class="nav" id="wave">-->
+<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffffB9" fill-opacity="1" d="M0,192L60,197.3C120,203,240,213,360,208C480,203,600,181,720,149.3C840,117,960,75,1080,69.3C1200,64,1320,96,1380,112L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" style="&#45;&#45;darkreader-inline-fill:rgba(255,255,255,0.73);" data-darkreader-inline-fill=""></path></svg>-->
 
+<!--<div class="nav" id="wave">-->
+<section class="head">
+<!--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L26.7,165.3C53.3,171,107,181,160,202.7C213.3,224,267,256,320,250.7C373.3,245,427,203,480,202.7C533.3,203,587,245,640,256C693.3,267,747,245,800,213.3C853.3,181,907,139,960,128C1013.3,117,1067,139,1120,138.7C1173.3,139,1227,117,1280,138.7C1333.3,160,1387,224,1413,256L1440,288L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z" data-darkreader-inline-fill="" style="&#45;&#45;darkreader-inline-fill:rgba(31,38,43,0.65);"></path></svg>-->
+
+    <div class="nav">
+        <h1 class="nav-head"><font style="color: rgba(255,255,255,0.56); border-color: #000000FF; border-width: 3px">TeamEngine</font></h1>
+    </div>
+    <div class="nav">
+        <p class="nav-subhead"><font style="color: rgba(255,255,255,1); border-color: #000000FF; border-width: 3px">— The human face is an important organ of an individual‘s body and it especially plays an important role in extraction of
+                an individual‘s behavior and emotional state</font></p>
+    </div>
+
+    <div class="nav">
+        <button class="nav-left-grp">Click me to SignUp</button>
+    </div>
+</section>
 </div>
 </body>
 </html>
