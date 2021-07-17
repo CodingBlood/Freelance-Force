@@ -1,0 +1,18 @@
+@keyframes play120 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -172800px 0px;
+  }
+}
+.shapeshifter {
+  animation-duration: 2000ms;
+  animation-timing-function: steps(120);
+  width: 1440px;
+  height: 320px;
+  background-repeat: no-repeat;
+}
+.shapeshifter.play {
+  animation-name: play120;
+}

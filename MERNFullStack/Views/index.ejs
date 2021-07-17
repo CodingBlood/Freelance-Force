@@ -1,5 +1,82 @@
+<!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="smoother.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+        .nav{
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .nav-left-grp{
+            background-color: rgba(255,255,255,1);
+            border: none;
+            display: flex;
+            margin-top: 35px;
+            margin-left: 30px;
+            margin-right: 20px;
+            width: 200px;
+            height: 40px;
+            padding-bottom: 3px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 16px;
+            box-shadow:0 1px 2px #5e5d5b;
+            text-align: center;
+            transition: 0.6s;
+            font-family: 'Otomanopee One' ;
+            font-size: 20px;
+            /*font-weight: bolder;*/
+        }
+        .nav-left-grp:hover {
+            animation-name: background-color;
+            animation-duration: 1000ms;
+        }
+        .nav-left-grp:active{
+            animation-name: background-color1;
+            animation-duration: 1000ms;
+        }
+
+        @keyframes background-color1 {
+            100% {
+                background: linear-gradient(90deg, lightskyblue, white);
+                box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+                transform: translateY(4px);
+            }
+        }
+        @keyframes background-color {
+            100% {
+                background: linear-gradient(90deg, lightskyblue, white);
+                /*box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);*/
+                transform: translateY(-1px);
+            }
+        }
+        svg{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+
+    <title>EKaSo</title>
+</head>
 <body>
-<h1>HELLO</h1>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L60,197.3C120,203,240,213,360,208C480,203,600,181,720,149.3C840,117,960,75,1080,69.3C1200,64,1320,96,1380,112L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" style="--darkreader-inline-fill:#007acc;" data-darkreader-inline-fill=""></path></svg>
+<div class="nav">
+    <button class="nav-left-grp">About Us</button>
+    <button class="nav-left-grp">Buy/Purchase</button>
+    <button class="nav-left-grp">Contact Us</button>
+</div>
+<!--<div class="nav" id="wave">-->
+
+</div>
 </body>
 </html>
