@@ -9,21 +9,48 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
-        body{
+        /*body{*/
             /*background: linear-gradient(-45deg, #EE7435, #F46479, #F96CB1);*/
             /*background: linear-gradient(-45deg, #ff3700, #FF69B4);*/
-            background: linear-gradient(-135deg, #000046, #1CB5E0);
+            /*background: linear-gradient(45deg, #000046, #1CB5E0);*/
             /*background: linear-gradient(135deg, #00F260, #0575E6);*/
             /*background: linear-gradient(-45deg, #A115AD, #FF5DA9, #FFB8B7);*/
             /*background: linear-gradient(-45deg, #FFB8B7, #FF5DA9, #A115AD);*/
             /*background: linear-gradient(45deg, #0f0c29,#302b63, #24243e);*/
-            transition: 2s;
+        /*    transition: 2s;*/
+        /*}*/
+        body {
+            background: linear-gradient(45deg, #000000, #EB5757,#16cb9c, #e14319, #193fe1, #bbe119, #d219e1,#EB5757, #000000);
+            background-size: 1000% 1000%;
+
+            -webkit-animation: AnimationName 81s ease infinite;
+            -moz-animation: AnimationName 81s ease infinite;
+            -o-animation: AnimationName 81s ease infinite;
+            animation: AnimationName 81s ease infinite;
+        }
+
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-o-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
         }
         .nav{
-            /*display: flex;*/
             position: relative;
-            /*top: 0;*/
-            /*left: 0;*/
         }
         .navbt{
             display: flex;
@@ -34,10 +61,7 @@
         .nav-left-grp{
             background-color: rgba(255,255,255,0.8);
             border: none;
-            /*display: flex;*/
-            /*margin-top: 25rem;*/
             margin-left: 8rem;
-            /*margin-right: 10%;*/
             width: auto;
             height: auto;
             padding-left: 10%;
@@ -47,32 +71,22 @@
             mix-blend-mode: screen;
             font-family: 'Otomanopee One' ;
             font-size: 40px;
-            /*font-weight: bolder;*/
         }
         .nav-head{
             border: none;
-            /*margin-top: 10rem;*/
             margin-left: 8rem;
             margin-bottom: 2rem;
-            /*margin-right: 10%;*/
             width: auto;
             height: auto;
-            /*padding-left: 10%;*/
-            /*padding-right: 10%;*/
-            /*text-align: center;*/
             transition: 0.6s;
             font-family: 'Otomanopee One' ;
             font-size: 100px;
         }
         .nav-subhead{
             border: none;
-            /*margin-top: 20rem;*/
             margin-left: 8rem;
-            /*margin-right: 10%;*/
             width: 70%;
             height: auto;
-            /*padding-left: 10%;*/
-            /*padding-right: 10%;*/
             text-align: center;
             transition: 0.6s;
             font-family: 'Otomanopee One' ;
@@ -99,7 +113,6 @@
         @keyframes background-color {
             100% {
                 background: rgba(255, 255, 255, 0.3);
-                /*box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);*/
                 transform: translateY(-1px);
             }
         }
@@ -135,35 +148,25 @@
         <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
     </svg>
 </div>
-<!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffffB9" fill-opacity="1" d="M0,192L60,197.3C120,203,240,213,360,208C480,203,600,181,720,149.3C840,117,960,75,1080,69.3C1200,64,1320,96,1380,112L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z" style="&#45;&#45;darkreader-inline-fill:rgba(255,255,255,0.73);" data-darkreader-inline-fill=""></path></svg>-->
 
-<!--<div class="nav" id="wave">-->
-<section class="head">
-<!--    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L26.7,165.3C53.3,171,107,181,160,202.7C213.3,224,267,256,320,250.7C373.3,245,427,203,480,202.7C533.3,203,587,245,640,256C693.3,267,747,245,800,213.3C853.3,181,907,139,960,128C1013.3,117,1067,139,1120,138.7C1173.3,139,1227,117,1280,138.7C1333.3,160,1387,224,1413,256L1440,288L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z" data-darkreader-inline-fill="" style="&#45;&#45;darkreader-inline-fill:rgba(31,38,43,0.65);"></path></svg>-->
+<section class="head">-->
     <div class="nav">
         <br/>
         <br/>
         <h1 class="nav-head"><font style="color: rgba(255,255,255,0.8); border-color: #000000FF; border-width: 3px">TeamEngine</font></h1>
-<!--        <img style="height: 25rem; width: 25rem;display: flex" src="/images/MacBook.svg" alt="MacBook">-->
         <p class="nav-subhead"><font style="color: rgba(255,255,255,1); border-color: #000000FF; border-width: 3px">— The human face is an important organ of an individual‘s body and it especially plays an important role in extraction of
                 an individual‘s behavior and emotional state</font></p>
         <br/>
         <br/>
         <br/>
     </div>
-<!--    <div class="nav">-->
-
-<!--    </div>-->
-<!--    <div><IMG SRC="MacBook.svg"></div>-->
-<!--    <div style="text-align: center; width: 100%; height: 100%"><img style="height: 25rem; width: 25rem" src="/images/MacBook.svg" alt="Sunflower"></div>-->
     <div class="navbt">
         <button class="nav-left-grp" style="height: 10rem; width: 45rem;border-radius: 5px">Click me to SignUp</button>
 
     </div>
     <br/>
     <br/>
-    <br/>
-<!--    <p> </p>-->
+<!--    <br/>-->
 </section>
 </div>
 </body>
