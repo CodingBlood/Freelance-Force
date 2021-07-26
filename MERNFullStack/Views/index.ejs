@@ -9,16 +9,6 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
-        /*body{*/
-            /*background: linear-gradient(-45deg, #EE7435, #F46479, #F96CB1);*/
-            /*background: linear-gradient(-45deg, #ff3700, #FF69B4);*/
-            /*background: linear-gradient(45deg, #000046, #1CB5E0);*/
-            /*background: linear-gradient(135deg, #00F260, #0575E6);*/
-            /*background: linear-gradient(-45deg, #A115AD, #FF5DA9, #FFB8B7);*/
-            /*background: linear-gradient(-45deg, #FFB8B7, #FF5DA9, #A115AD);*/
-            /*background: linear-gradient(45deg, #0f0c29,#302b63, #24243e);*/
-        /*    transition: 2s;*/
-        /*}*/
         body {
             background: linear-gradient(45deg, #000000, #EB5757,#16cb9c, #e14319, #193fe1, #bbe119, #d219e1,#EB5757, #000000);
             background-size: 1000% 1000%;
@@ -55,8 +45,6 @@
         .navbt{
             display: flex;
             position: relative;
-            /*top: 0;*/
-            /*left: 0;*/
         }
         .nav-left-grp{
             background-color: rgba(255,255,255,0.8);
@@ -71,6 +59,20 @@
             mix-blend-mode: screen;
             font-family: 'Otomanopee One' ;
             font-size: 40px;
+        }
+        .nav-ryt-grp{
+            background-color: rgba(255,255,255,0.6);
+            border: none;
+            margin-top: 1rem;
+            width: auto;
+            height: auto;
+            /*padding-left: 10%;*/
+            /*padding-right: 10%;*/
+            text-align: center;
+            transition: 0.6s;
+            mix-blend-mode: screen;
+            font-family: 'Otomanopee One' ;
+            font-size: 18px;
         }
         .nav-head{
             border: none;
@@ -87,10 +89,19 @@
             margin-left: 8rem;
             width: 70%;
             height: auto;
-            text-align: center;
             transition: 0.6s;
             font-family: 'Otomanopee One' ;
             font-size: 100%;
+        }
+        .nav-ryt-grp:hover {
+            animation-name: background-color;
+            mix-blend-mode: screen;
+            animation-duration: 1000ms;
+        }
+        .nav-ryt-grp:active{
+            animation-name: background-color1;
+            mix-blend-mode: screen;
+            animation-duration: 1000ms;
         }
         .nav-left-grp:hover {
             animation-name: background-color;
@@ -138,7 +149,7 @@
 
     </style>
 
-    <title>EKaSo</title>
+    <title>KiiT Network</title>
 </head>
 <body>
 <div class="custom-shape-divider-top-1626592615">
@@ -149,24 +160,19 @@
     </svg>
 </div>
 
-<section class="head">-->
+<section class="head">
     <div class="nav">
-        <br/>
-        <br/>
-        <h1 class="nav-head"><font style="color: rgba(255,255,255,0.8); border-color: #000000FF; border-width: 3px">TeamEngine</font></h1>
-        <p class="nav-subhead"><font style="color: rgba(255,255,255,1); border-color: #000000FF; border-width: 3px">— The human face is an important organ of an individual‘s body and it especially plays an important role in extraction of
-                an individual‘s behavior and emotional state</font></p>
-        <br/>
-        <br/>
-        <br/>
+        <h1 class="nav-head"><font style="color: rgba(255,255,255,0.8); border-color: #000000FF; border-width: 3px; text-shadow: black; sha">KiiT Network</font></h1>
+        <p class="nav-subhead"><font style="color: rgba(255,255,255,1); border-color: #000000FF; border-width: 3px">This is an all in one platform for Teacher Selection, Confessions
+                                                News, Homework, Music, Contests and much more....</font></p>
     </div>
     <div class="navbt">
-        <button class="nav-left-grp" style="height: 10rem; width: 45rem;border-radius: 5px">Click me to SignUp</button>
-
+        <a href="/signup"><button class="nav-left-grp" style="height: 10rem; width: 45rem;border-radius: 5px">Click me to SignUp</button></a>
     </div>
-    <br/>
-    <br/>
-<!--    <br/>-->
+    <div class="navbt">
+        <a href="/login"><button class="nav-ryt-grp" style="height: 5rem; width: 12rem;border-radius: 5px; margin-left: 8rem">SignIn</button></a>
+        <a href="/home"><button class="nav-ryt-grp" style="height: 5rem; width: 12rem;border-radius: 5px;margin-left: 2rem">Nah, Just Proceed</button></a>
+    </div>
 </section>
 </div>
 </body>

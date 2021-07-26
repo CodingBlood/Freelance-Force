@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            background: linear-gradient(45deg, #000000, #EB5757,#16cb9c, #e14319, #193fe1, #bbe119, #d219e1,#EB5757, #000000);
+            background-size: 1000% 1000%;
+
+            -webkit-animation: AnimationName 81s ease infinite;
+            -moz-animation: AnimationName 81s ease infinite;
+            -o-animation: AnimationName 81s ease infinite;
+            animation: AnimationName 81s ease infinite;
+        }
+
+        @-webkit-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-moz-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @-o-keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+        @keyframes AnimationName {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+    .log{
+        width: 50%  ;
+        height: 70%;
+        text-align: center;
+        box-shadow: 7px 6px 58px 1px rgba(0, 0, 0, 0.4);
+        margin-top: 10%;
+        margin-left: 25%;
+        border-radius: 5px;
+    }
+    .logo{
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        width: 15rem;
+        height: 15rem;
+    }
+    .form-signin{
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 7%;
+    }
+
+    </style>
+    <title>KiiT Network</title>
+</head>
+<body>
+<div class="log">
+    <main class="form-signin">
+    <form>
+        <img class="mb-4" src="./images/MacBook-cropped.svg" alt="" width="72" height="57">
+        <h1 class="h3 mb-3 fw-normal">Login Lobable KiiTians</h1>
+        <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <br/>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+        </div>
+        <br/>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
+    </form>
+    </main>
+</div>
+<!--<h1>hello</h1>-->
+</body>
+</html>
